@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bountiful Foods</title>
+        <meta name="description" content="Website for the sale of fresh fruits and produce">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Indie+Flower&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+
+    </head>
+    <body>
+        <header>
+            <picture>
+               <img src="images/logo.jpg" alt="BountifulFoodsLogo">
+            </picture>
+            <nav class="nav-bar">
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+    
+            </nav>  
+
+            <div class="media">
+                <div id="fb">
+                    <a class="media" href="https://www.facebook.com"><i class="fa-brands fa-square-facebook fa-2xl" style="color: blue;"></i></a>
+                </div>
+                <div id="tw">
+                    <a class="media" href="https://www.twitter.com"><i class="fa-brands fa-square-twitter fa-2xl" style="color: cyan;"></i></a>
+                </div>
+                <div id="inst">
+                    <a class="media" href="https://www.instagram.com"><i class="fa-brands fa-square-instagram fa-2xl" style="color: blueviolet;"></i></a>
+                </div>
+
+            </div> 
+        </header>
+    <main>
+
+        <div id="areaDetails">
+            <picture>
+                <source srcset="images/market-large.jpg" media="(min-width: 800px)">
+                <source srcset="images/market-medium.jpg" media="(min-width: 520px)"> 
+                <img src="images/market-small.jpg" alt="slideshow img1">
+
+                <div id="details">
+                    <p>Welcome to Carlsbad California the home to many of the best organic fruits
+                        and vegetables in the country. We have partnered with 
+                        local growers to ensure only the best quality organic
+                        products reach your mouth!
+                    </p>
+                </div>
+            </picture>
+        </div>
+        <div class="counter">
+           <A href="fresh.html "><h1 id="count">-</h1></A>
+        </div>
+        <div class="slidesLable">
+            <h1>Check out some of the local favorites!</h1>
+        </div>
+        <div class="slideshow">
+            <picture>
+                <source srcset="images/allGreen-large.jpg" media="(min-width: 800px)">
+                <source srcset="images/allGreen-medium.jpg" media="(min-width: 520px)"> 
+                <img class="slideshow-img" src="images/allGreen-small.jpg" alt="slideshow img1">
+
+            </picture>
+            <picture>
+                <source srcset="images/OBC-large.jpg" media="(min-width: 800px)">
+                <source srcset="images/OBC-medium.jpg" media="(min-width: 520px)"> 
+                <img class="slideshow-img" src="images/OBC-small.jpg" alt="slideshow img1">
+
+            </picture>
+            <picture>
+                <source srcset="images/OPL-large.jpg" media="(min-width: 800px)">
+                <source srcset="images/OPL-medium.jpg" media="(min-width: 520px)"> 
+                <img class="slideshow-img" src="images/OPL-small.jpg" alt="slideshow img1">
+
+            </picture>
+            <picture>
+                <source srcset="images/TPA-large.jpg" media="(min-width: 800px)">
+                <source srcset="images/TPA-medium.jpg" media="(min-width: 520px)"> 
+                <img class="slideshow-img" src="images/TPA-small.jpg" alt="slideshow img1">
+
+ 
+            </picture>
+        </div>
+        <div class="freshLink">
+            <a href="fresh.html" style="font-size: 2em;">Try Making Your Own!!!</a>
+        </div>
+        <div class="weather">
+            <h1>Local Weather</h1>
+            <div>
+                <p>Current Temp: <span id="current-temp"></span> &deg;F</p>
+
+                    <figure class="weather-icon">
+                        <img src="images/Blankcanvas.png" alt="Weather Icon" id="weather-icon"> 
+                        <figcaption></figcaption>
+                    </figure>
+                <p><span id="humid"></span> % Humidity</p>
+            </div>
+<br>
+            <figure class="weather-cast">
+                <p><span id="day1Date"></span>-<span id="foreDay1C"></span></p>
+                <img src="images/Blankcanvas.png" alt="Weather Icon" id="foreDay1Icon"> 
+                <p>H <span id="foreDay1H"></span> &deg;F  ||  L <span id="foreDay1L"></span>&deg;F</p>
+            </figure>
+<br>
+            <figure class="weather-cast">
+                <p><span id="day2Date"></span> - <span id="foreDay2C"></span></p>
+                <img src="images/Blankcanvas.png" alt="Weather Icon" id="foreDay2Icon"> 
+                <p>H <span id="foreDay2H"></span> &deg;F  ||  L <span id="foreDay2L"></span> &deg;F</p>
+                </figure>
+<br>
+            <figure class="weather-cast">
+                <p><span id="day3Date"></span> - <span id="foreDay3C"></span></p>
+                <img src="images/Blankcanvas.png" alt="Weather Icon" id="foreDay3Icon"> 
+                <p>H <span id="foreDay3H"></span> &deg;F  ||  L <span id="foreDay3L"></span> &deg;F</p>
+                </figure>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="address">
+            <p>Business Address:
+                <br>850 Ramarack Ave
+                <br>Carlsbad, CA 92008
+            </p>
+        </div>
+        <div class="hours">
+            <p>Phone: (555)555-5555</p>
+            <p>
+                Summer Hours:
+                M-F   6am - 9pm |
+                Sat   6am - 11pm |
+                Sun   Closed
+            </p>
+        </div>
+        <div class="map">
+            <a href="https://www.google.com/search?q=850+tamarack+ave&rlz=1C1GCEU_enUS874US875&oq=850+Tamarack+Ave&aqs=chrome.0.0i512j0i20i263i512j69i60.989j0j7&sourceid=chrome&ie=UTF-8#"> <img src="images/map.jpg" alt=""></a>
+        </div>
+    </footer>
+        <div id="dateStamp">
+            <p> &copy; <span id="year"></span> - Bountiful Foods Site Plan | Jeremy Shelby | WDD230 Project | Last Updated: <span id="lastUpdate"></span></p>
+        </div>
+    <script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/be7978985f.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

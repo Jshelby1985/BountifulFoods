@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bountiful Foods</title>
+        <meta name="description" content="Website for the sale of fresh fruits and produce">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Indie+Flower&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+
+    </head>
+<body>
+    <header>
+        <picture>
+           <img src="images/logo.jpg" alt="BountifulFoodsLogo">
+        </picture>
+        <nav class="nav-bar">
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </nav>  
+
+        <div class="media">
+            <div id="fb">
+                <a class="media" href="https://www.facebook.com"><i class="fa-brands fa-square-facebook fa-2xl" style="color: blue;"></i></a>
+            </div>
+            <div id="tw">
+                <a class="media" href="https://www.twitter.com"><i class="fa-brands fa-square-twitter fa-2xl" style="color: cyan;"></i></a>
+            </div>
+            <div id="inst">
+                <a class="media" href="https://www.instagram.com"><i class="fa-brands fa-square-instagram fa-2xl" style="color: blueviolet;"></i></a>
+            </div>
+
+        </div> 
+    </header>
+    <main class="freshPage">
+        <form class="form" action="javascript:placeOrder()">
+            <h1 style="font-size: 2rem;">Choose Your Ingredients</h1>
+
+            <fieldset>
+                <label for="ingredient1">Ingredient 1:
+                <select name="ingredient1" id="ingredient1">
+                
+                </select>
+                </label>
+
+                <label for="ingredient2">Ingredient 2:
+                <select name="ingredient2" id="ingredient2">
+                </select></label>
+
+                <label for="ingredient3">Ingredient 3:
+                <select name="ingredient3" id="ingredient3" >
+                </select></label>
+
+
+                <label class="fname">First Name* <input type="text" name="fname" required></label>
+
+                <label class="lname">Last Name <input type="text" name="lname"></label>
+
+                <label class="phone">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+
+                <label class="mail">Email <input type="email" name="email" placeholder="someone@email.com"></label>
+                
+
+                <label id="pickup" for="location">Pickup Location:
+                <select name="location" id="location">
+                    <option value="store">Store</option>
+                    <option value="Truck1">Truck 1</option>
+                    <option value="truck2">Truck 2</option>
+                    <option value="truck3">Truck 3</option>
+                </select></label>
+
+                <textarea class="instruction" name="instructions" id="instructions" cols="30" rows="14" placeholder="Add Special Instructions"></textarea>
+                <input type="submit" value="Place My Order" class="submitBtn" style="background-color: chartreuse;">
+
+            </fieldset>
+
+            <div id="receipt">
+
+            </div>
+        </form>
+        <footer class="freshFoot">
+            <div class="address">
+                <p>Business Address:
+                    <br>850 Ramarack Ave
+                    <br>Carlsbad, CA 92008
+                </p>
+            </div>
+            <div class="hours">
+                <p>
+                    Summer Hours:
+                    M-F   6am - 9pm |
+                    Sat   6am - 11pm |
+                    Sun   Closed
+                </p>
+            </div>
+            <div class="map">
+                <a href="https://www.google.com/search?q=850+tamarack+ave&rlz=1C1GCEU_enUS874US875&oq=850+Tamarack+Ave&aqs=chrome.0.0i512j0i20i263i512j69i60.989j0j7&sourceid=chrome&ie=UTF-8#"> <img src="images/map.jpg" alt=""></a>
+            </div>
+        </footer>
+            <div id="dateStamp">
+                <p> &copy; <span id="year"></span> - Bountiful Foods Site Plan | Jeremy Shelby | WDD230 Project | Last Updated: <span id="lastUpdate"></span></p>
+            </div>
+    </main>
+    <script src="scripts/fresh.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/be7978985f.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
